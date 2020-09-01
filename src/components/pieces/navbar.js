@@ -1,7 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-const Container = styled.div``;
+const Container = styled.div`
+  height: 58px;
+  border-bottom: 1px solid lightgrey;
+  width: 100vw;
+  display: flex;
+`;
 
 const NavBar = (props) => {
   return (

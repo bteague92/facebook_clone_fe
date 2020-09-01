@@ -1,21 +1,23 @@
 import React from "react";
 import styled from "styled-components";
 
-const Container = styled.div``;
+const Container = styled.div`
+  background: blue;
+  border: 2px solid black;
+  width: 50%;
+  min-height: 10%;
+
+  .inner{
+    background: grey;
+    width: 100%;
+    height: 100%;
+  }
+`;
 
 const Home = (props) => {
   return (
     <Container>
-      <div classname="left">
-        <section classname="stories"></section>
-        <section classname="input"></section>
-        <section classname="rooms"></section>
-        <section classname="timeline"></section>
-      </div>
-      <div classname="right">
-        <section classname="ads"></section>
-        <section classname="contacts"></section>
-      </div>
+      <div className="inner" ></div>
     </Container>
   );
 };
