@@ -11,6 +11,8 @@ const Container = styled.div`
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid lightgrey;
+    position: fixed;
+    background: white;
 
     .left{
 
@@ -86,11 +88,11 @@ const NavBar = (props) => {
                 </div>
             </div>
             <div className="middle">
-                <FontAwesomeIcon icon={faHome} size="2x" />
-                <FontAwesomeIcon icon={faUserFriends} size="2x" />
-                <FontAwesomeIcon icon={faTv} size="2x" />
-                <FontAwesomeIcon icon={faStore} size="2x" />
-                <FontAwesomeIcon icon={faUsers} size="2x" />
+                <FontAwesomeIcon icon={faHome} size="2x" color="blue" />
+                <FontAwesomeIcon icon={faUserFriends} size="2x" color="blue" />
+                <FontAwesomeIcon icon={faTv} size="2x" color="blue" />
+                <FontAwesomeIcon icon={faStore} size="2x" color="blue" />
+                <FontAwesomeIcon icon={faUsers} size="2x" color="blue" />
             </div>
             <div className="right">
                 <div className="button"></div>
