@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import fbLogo from "../../images/facebookLogo.JPG";
 import Phil from "../../images/phil.JPG";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee, faHome, faUsers, faTv, faStore, faUserFriends } from '@fortawesome/free-solid-svg-icons'
 
 const Container = styled.div`
     width: 100%;
@@ -45,6 +47,10 @@ const Container = styled.div`
             width: 40px;
             height: 40px;
             background: grey;
+
+            &:hover{
+                background: lightgrey;
+            }
         }
     }
 
@@ -62,6 +68,10 @@ const Container = styled.div`
             background: grey;
             margin: 0 6px;
             border-radius: 50px;
+
+            &:hover{
+                background: lightgrey;
+            }
         }
     }
 `;
@@ -76,11 +86,11 @@ const NavBar = (props) => {
                 </div>
             </div>
             <div className="middle">
-                <div className="button"></div>
-                <div className="button"></div>
-                <div className="button"></div>
-                <div className="button"></div>
-                <div className="button"></div>
+                <FontAwesomeIcon icon={faHome} size="2x" />
+                <FontAwesomeIcon icon={faUserFriends} size="2x" />
+                <FontAwesomeIcon icon={faTv} size="2x" />
+                <FontAwesomeIcon icon={faStore} size="2x" />
+                <FontAwesomeIcon icon={faUsers} size="2x" />
             </div>
             <div className="right">
                 <div className="button"></div>

@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import Logo from "../../images/logo.JPG";
 import StoryOne from "../../images/storyOne.JPG";
 import Phil from "../../images/phil.JPG";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faThumbsUp, faComment, faVideo, faImages, faSmile, faChevronCircleDown, faCalendarWeek, faHistory, faBookmark, faFlag, faHome, faUsers, faTv, faStore, faUserFriends } from '@fortawesome/free-solid-svg-icons'
 
 const Container = styled.div`
     height: auto;
@@ -24,7 +26,7 @@ const Container = styled.div`
         .profilePic{
             display: flex;
             align-items: center;
-            margin: 12px 8px;
+            margin: 20px 10px;
 
             img{
                 width: 40px;
@@ -41,7 +43,7 @@ const Container = styled.div`
         .iconGroup{
             display: flex;
             align-items: center;
-            margin: 12px 8px;
+            margin: 20px 10px;
 
             &:hover{
                 background: lightgrey;
@@ -144,16 +146,8 @@ const Container = styled.div`
                         background: lightgrey;
                     }
 
-                    .pic{
-                        width: 40px;
-                        height: 40px;
-                        background: grey;
-                        border-radius: 50px;
-                        margin: 0 5px 0 0;
-                    }
-
-                    p{
-
+                    h4{
+                        padding: 0 0 0 10px;
                     }
                 }
 
@@ -166,16 +160,8 @@ const Container = styled.div`
                         background: lightgrey;
                     }
 
-                    .pic{
-                        width: 40px;
-                        height: 40px;
-                        background: grey;
-                        border-radius: 50px;
-                        margin: 0 5px 0 0;
-                    }
-
-                    p{
-                        
+                    h4{
+                        padding: 0 0 0 10px;
                     }
                 }
 
@@ -188,16 +174,8 @@ const Container = styled.div`
                         background: lightgrey;
                     }
 
-                    .pic{
-                        width: 40px;
-                        height: 40px;
-                        background: grey;
-                        border-radius: 50px;
-                        margin: 0 5px 0 0;
-                    }
-
-                    p{
-                        
+                    h4{
+                        padding: 0 0 0 10px;
                     }
                 }
             }
@@ -326,18 +304,20 @@ const Container = styled.div`
                     padding: 10px 0;
 
                     .like{
-                        width: 40px;
-                        height: 40px;
-                        background: grey;
-                        border-radius: 50px;
+                        display: flex;
+
+                        h4{
+                            padding: 0 0 0 10px;
+                        }
 
                     }
 
                     .comment{
-                        width: 40px;
-                        height: 40px;
-                        background: grey;
-                        border-radius: 50px;
+                        display: flex;
+
+                        h4{
+                            padding: 0 0 0 10px;
+                        }
 
                     }
                 }
@@ -482,39 +462,39 @@ const Homes = (props) => {
                     <h4>Brandon Teague</h4>
                 </div>
                 <div className="iconGroup">
-                    <div className="icon"></div>
+                    <FontAwesomeIcon icon={faUserFriends} size="2x" />
                     <h4>Find Friends</h4>
                 </div>
                 <div className="iconGroup">
-                    <div className="icon"></div>
+                    <FontAwesomeIcon icon={faUsers} size="2x" />
                     <h4>Groups</h4>
                 </div>
                 <div className="iconGroup">
-                    <div className="icon"></div>
+                    <FontAwesomeIcon icon={faStore} size="2x" />
                     <h4>Marketplace</h4>
                 </div>
                 <div className="iconGroup">
-                    <div className="icon"></div>
+                    <FontAwesomeIcon icon={faTv} size="2x" />
                     <h4>Watch</h4>
                 </div>
                 <div className="iconGroup">
-                    <div className="icon"></div>
+                    <FontAwesomeIcon icon={faCalendarWeek} size="2x" />
                     <h4>Events</h4>
                 </div>
                 <div className="iconGroup">
-                    <div className="icon"></div>
+                    <FontAwesomeIcon icon={faHistory} size="2x" />
                     <h4>Memories</h4>
                 </div>
                 <div className="iconGroup">
-                    <div className="icon"></div>
+                    <FontAwesomeIcon icon={faBookmark} size="2x" />
                     <h4>Saved</h4>
                 </div>
                 <div className="iconGroup">
-                    <div className="icon"></div>
+                    <FontAwesomeIcon icon={faFlag} size="2x" />
                     <h4>Pages</h4>
                 </div>
                 <div className="iconGroup">
-                    <div className="icon"></div>
+                    <FontAwesomeIcon icon={faChevronCircleDown} size="2x" />
                     <h4>See More</h4>
                 </div>
             </div>
@@ -552,22 +532,16 @@ const Homes = (props) => {
                     </div>
                     <div className="buttons">
                         <div className="live">
-                            <div className="pic">
-
-                            </div>
-                            <p>Live Video</p>
+                            <FontAwesomeIcon icon={faVideo} size="2x" />
+                            <h4>Live Video</h4>
                         </div>
                         <div className="upload">
-                            <div className="pic">
-
-                            </div>
-                            <p>Photo/Video</p>
+                            <FontAwesomeIcon icon={faImages} size="2x" />
+                            <h4>Photo/Video</h4>
                         </div>
                         <div className="feeling">
-                            <div className="pic">
-
-                            </div>
-                            <p>Feeling/Activity</p>
+                            <FontAwesomeIcon icon={faSmile} size="2x" />
+                            <h4>Feeling/Activity</h4>
                         </div>
                     </div>
                 </div>
@@ -623,8 +597,14 @@ const Homes = (props) => {
                                     </div>
                                 </div>
                                 <div className="bottom">
-                                    <div className="like" ></div>
-                                    <div className="comment" ></div>
+                                    <div className="like" >
+                                        <FontAwesomeIcon icon={faThumbsUp} size="lg" />
+                                        <h4>Like</h4>
+                                    </div>
+                                    <div className="comment" >
+                                        <FontAwesomeIcon icon={faComment} size="lg" />
+                                        <h4>Comment</h4>
+                                    </div>
                                 </div>
                             </div>
                         )
